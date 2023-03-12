@@ -17,7 +17,9 @@ italic.addEventListener('click', getItalic)
 
 function getMinus() {
     console.log('click is working')
+ if () {
 
+ }
 }
 
 function getPlus() {
