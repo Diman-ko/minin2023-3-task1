@@ -20,18 +20,20 @@ if (techForm.length === 0) {
  let html = ''
  for (let i = 0; i < techForm.length; i++) {
   const tech = techForm[i]
-  html += `
-      <li>
+  html += toCard(tech)
+ }
+ content.innerHTML = html
+}
+}
+
+function toCard(tech) {
+    return `
+    <li>
         <label data-type="${tech.type}">
             <input type="checkbox" /> ${tech.title}
         </label>
       </li>
-     `
-
- }
- content.innerHTML = html
-}
-
+    `
 
 }
 
