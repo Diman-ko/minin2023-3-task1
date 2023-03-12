@@ -8,12 +8,20 @@ const techForm = [
     {type: 'job', title: 'Устроиться на работу', dicription: 'job-text', done: false },
 ]
 
+// const techForm = []
+
 console.log(techForm)
 
-let html = ''
- for (let i = 0; i< techForm.length; i++ ){
-    const tech = techForm[i]
-     html += `
+
+if (techForm.length === 0) {
+ content.innerHTML = '<p class="empty">Empty. Add new</p>'
+} else {
+
+
+ let html = ''
+ for (let i = 0; i < techForm.length; i++) {
+  const tech = techForm[i]
+  html += `
       <li>
         <label data-type="${tech.type}">
             <input type="checkbox" /> ${tech.title}
@@ -23,6 +31,10 @@ let html = ''
 
  }
  content.innerHTML = html
+}
+
+
+
 
 function init() {
     
