@@ -1,7 +1,7 @@
 const content = document.querySelector('#content')
 
 const techForm = [
-    {type: 'js', title: 'Выучить JavaScript', dicription: 'js-text', done: true},
+    {type: 'js', title: 'Выучить JavaScript', dicription: 'js-text', done: false},
     {type: 'git', title: 'Попрактиковаться с Git', dicription: 'git-text', done: false },
     {type: 'react', title: 'Изучить React', dicription: 'react-text', done: false },
     {type: 'nod', title: 'Понять NodeJS', dicription: 'nod-text', done: false },
@@ -28,12 +28,14 @@ if (techForm.length === 0) {
 
 function toCard(tech) {
 
-    let doneClass = ''
+/*    let doneClass = ''
 if (tech.done) {
     doneClass = 'checked'
 } else {
     doneClass = ''
-}
+}*/
+
+const doneClass = tech.done ?  'checked' : ''
     return `
     <li class="">
         <label data-type="${tech.type}">
