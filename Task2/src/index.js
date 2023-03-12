@@ -12,11 +12,10 @@ const techForm = [
 
 console.log(techForm)
 
-
+function init() {
 if (techForm.length === 0) {
  content.innerHTML = '<p class="empty">Empty. Add new</p>'
 } else {
-
 
  let html = ''
  for (let i = 0; i < techForm.length; i++) {
@@ -34,10 +33,6 @@ if (techForm.length === 0) {
 }
 
 
-
-
-function init() {
-    
 }
 
 
