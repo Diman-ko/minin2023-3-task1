@@ -15,6 +15,7 @@ bold.addEventListener('click', getBolt)
 italic.addEventListener('click', getItalic)
 
 //let fontSize = 40
+
 let  fontSize = parseInt(styles.fontSize)
 
 console.log('fontSize '+ ' ' + fontSize)
