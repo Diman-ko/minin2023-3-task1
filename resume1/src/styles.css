@@ -1,3 +1,10 @@
+body {
+    background-color: khaki;
+}
+.table {
+    border: black 2px;
+    width: 300px;
+}
 .panel {
     display: flex;
     justify-content: center;
